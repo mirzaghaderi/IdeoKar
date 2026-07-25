@@ -1,4 +1,4 @@
-IdeoKar2
+# IdeoKar2
 
 A Java desktop tool for extracting chromosomal/karyotypic
 parameters from metaphase chromosome-spread images and building ideograms,
