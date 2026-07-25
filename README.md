@@ -124,33 +124,34 @@ IdeoKar includes a customizable legend for chromosome ideograms. The legend auto
 
 Abbreviations
 
-Chromosomal parameter or asymmetry index	 Formula	 Reference
-L:	 Mean  length of long arm
-S:	 Mean  length of short arm
-CL:	 Chromosome length = L + S
-AR:	 Arm Ration = L/S
-r-value:	 S/L
-RL%:	 Relative length of chromosome = (CL/Sum(CL))*100
-CI:	 Centromeric index = S/CL
-Chromosome type: 	 Defined Terms in Table 2 of the KaryoMeasure manual	 "Levan et al., 1964"
-F%:	 Form percentage of chromosome = (S/Sum(CL))*100
-x:	 mean
-n:	 haploid chromosome number of an individual or a taxon
-s: 	 standard deviation
-SE	 standard error
-HCL:	 Total chromosome length of the haploid complement = Sum(CL)
-TF%:	 Total form percentage = (Sum(S)/Sum(CL))*100	 "Huziwara, 1962"
-Stebbins:	 Stebbins asymmetry index A–C, 1-4 (Table 3 of KaryoMeasure manual)	 "Stebbins, 1971"
-AsK%:	 Arano index of karyotype asymmetry = (Sum(L)/Sum(CL))*100	 "Arano, 1963"
-A1:	 Intrachromosomal asymmetry index = 1-[Sum(Si/Li)/n]	 "Romero-Zarco, 1986"
-A2:	 Interchromosomal asymmetry index = sCL/xCL	 "Romero-Zarco, 1986"
-S%:	 Symmetry index = (CLmin/CLmax)*100
-Xci:	 Mean centromeric index = Sum(CI)/n
-A:	 Degree of karyotype asymmetry = Sum((Li-Si)/(Li+Si))/n	 "Watanabe et al., 1999"
-Xca:	 Mean Centromeric Asymmetry =A*100
-CVcl:	 Coefficient of variation of chromosome length = (sCL/xCL)*100 = A2*100	 "Paszko, 2006"
-Cvci:	 Coefficient of variation of centromeric index = (sCI/xCI)*100	 "Paszko, 2006"
-AI:	 Asymmetry Index = (CVCL*CVCI)/100	 "Paszko, 2006"
+| Parameter | Formula / Definition | Reference |
+|-----------|----------------------|-----------|
+| L | Mean length of long arm | |
+| S | Mean length of short arm | |
+| CL | Chromosome length = L + S | |
+| AR | Arm Ratio = L/S | |
+| r-value | S/L | |
+| RL% | Relative length of chromosome = (CL / Sum(CL)) * 100 | |
+| CI | Centromeric index = S / CL | |
+| Chromosome type | Defined Terms in Table 2 of the KaryoMeasure manual | Levan et al., 1964 |
+| F% | Form percentage of chromosome = (S / Sum(CL)) * 100 | |
+| x | mean | |
+| n | haploid chromosome number of an individual or a taxon | |
+| s | standard deviation | |
+| SE | standard error | |
+| HCL | Total chromosome length of the haploid complement = Sum(CL) | |
+| TF% | Total form percentage = (Sum(S) / Sum(CL)) * 100 | Huziwara, 1962 |
+| Stebbins | Stebbins asymmetry index A–C, 1-4 (Table 3 of KaryoMeasure manual) | Stebbins, 1971 |
+| AsK% | Arano index of karyotype asymmetry = (Sum(L) / Sum(CL)) * 100 | Arano, 1963 |
+| A1 | Intrachromosomal asymmetry index = 1 - [Sum(Si / Li) / n] | Romero-Zarco, 1986 |
+| A2 | Interchromosomal asymmetry index = sCL / xCL | Romero-Zarco, 1986 |
+| S% | Symmetry index = (CL<sub>min</sub> / CL<sub>max</sub>) * 100 | |
+| Xci | Mean centromeric index = Sum(CI) / n | |
+| A | Degree of karyotype asymmetry = Sum((Li - Si) / (Li + Si)) / n | Watanabe et al., 1999 |
+| Xca | Mean Centromeric Asymmetry = A * 100 | |
+| CVcl | Coefficient of variation of chromosome length = (sCL / xCL) * 100 = A2 * 100 | Paszko, 2006 |
+| Cvci | Coefficient of variation of centromeric index = (sCI / xCI) * 100 | Paszko, 2006 |
+| AI | Asymmetry Index = (CVCL * CVCI) / 100 | Paszko, 2006 |
 
 
 
