@@ -27,7 +27,9 @@ Download IdeoKar2.rar and extract it.
 Double-click IdeoKar.exe (Keep IdeoKar.exe and IdeoKar.jar together 
 in this same folder. Copy the whole folder anywhere you like.
 
+![IdeoKar2 – three-window layout](IdeoKar2.jpg)
 
+*Figure 1 – The three windows of IdeoKar2.*
 
 IdeoKar include three windows
 
