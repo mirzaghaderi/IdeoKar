@@ -1,6 +1,6 @@
 # IdeoKar2
 
-A Java desktop tool for extracting chromosomal/karyotypic
+A Java tool for extracting chromosomal/karyotypic
 parameters from metaphase chromosome-spread images and building ideograms,
 including multi-row ideograms for allopolyploids (one row per genome) or
  multi-row ideograms for multi-species.
