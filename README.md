@@ -5,33 +5,52 @@ parameters from metaphase chromosome-spread images and building ideograms,
 including multi-row ideograms for allopolyploids (one row per genome) or
  multi-row ideograms for multi-species.
 
-Requirements
+## System Requirements
 
-- Java 17+ (built/tested with OpenJDK 21). No external libraries are used —
-  pure `javax.swing` / `java.awt` / `javax.imageio`.
+To run IdeoKar from the compiled JAR file, the following are required:
 
-Run
+- Operating System: Windows, Linux, or macOS
+- Java: Java Runtime Environment (JRE) or Java Development Kit (JDK)
+- Recommended Java version: Java 17 or newer
 
-A pre-built runnable jar is included:
+## Run
+
+Check Java Installation. Open Command Prompt (CMD) or a terminal and run:
+
+java -version
+
+If Java is installed, you should see the installed Java version, for example:
 
 ```
-Open CMD or terminal
-cd path_to_IdeoKar_folder  (e.g. cd Desktop/Ideokar2)
-java -jar IdeoKar.jar
+java version "17.0.x"
+```
+or:
+
+```
+openjdk version "17.x.x"
 ```
 
+## Run IdeoKar
 
-IdeoKar for Windows
+Place IdeoKar2.jar in a convenient folder. Open CMD and navigate to that folder:
 
-Download IdeoKar2.rar and extract it.
-Double-click IdeoKar.exe (Keep IdeoKar.exe and IdeoKar.jar together 
-in this same folder. Copy the whole folder anywhere you like.
+```
+cd C:\Path\To\IdeoKar
+```
+
+Then run:
+
+```
+java -jar IdeoKar2.jar
+```
+
 
 ![IdeoKar2 – three-window layout](IdeoKar2.jpg)
 
 *Figure 1 – The three windows of IdeoKar2.*
 
-IdeoKar include three windows
+
+## IdeoKar include three windows
 
 1. Core window — toolbar (Open Image(s), Close Tab, Define Scale, Zoom In,
    Zoom Out, Undo Chromosome, Run, Save Ideogram, Save Table, Help) plus a
