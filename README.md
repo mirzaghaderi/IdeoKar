@@ -60,7 +60,7 @@ java -jar IdeoKar2.jar
    centromere line, with a scale bar. Has its own Save Ideogram button
    (also reachable from the core window's toolbar).
 
-Workflow
+## Workflow
 
 1. Open Image — select one or more images (same magnification, same
    genotype/replicate set). Each opens in its own tab.
@@ -92,7 +92,7 @@ Workflow
    Zoom out. Zooming is centered on the exact location under the mouse pointer, 
    so you can zoom into a specific chromosome or image region.
 
-Computed parameters
+## Computed parameters
 
 Per chromosome: short arm (S), long arm (L), total length (TCL = S+L), arm
 ratio (L/S), centromeric index (S/TCL×100), relative length (chromosome's
@@ -106,7 +106,7 @@ index — inter-/intra-chromosomal asymmetry measures), the Romero-Zarco
 (1986) A1/A2 asymmetry indices, and a karyotype formula (e.g. `6m + 2sm`).
 
 
-Save Project 
+## Save Project 
 
 Save Project saves the complete project into the first image folder 
 selected/used by the user. The project file stores the necessary 
@@ -116,7 +116,7 @@ activities/settings. Existing tracing data, chromosome information, labels,
 colored segments, scaling, and other project settings will be preserved.
 
 
-Excel output
+## Excel output
 
 The Excel workbook contains:
 1. Chromosomal parameters — homologous-group means and SE values.
@@ -124,7 +124,7 @@ The Excel workbook contains:
 3. Karyotype parameters — karyotype-level indices and Stebbins class.
 
 
-Chromosome banding
+## Chromosome banding
 
 When one colored and one or more uncolored chromosomes with the same 
 chromosome number are traced, the mean chromosome arm sizes are calculated 
@@ -135,12 +135,12 @@ if the colored chromosome's short arm is shorter than the mean, the colored
 segment is expanded proportionally. If it is longer, the segment is proportionally 
 shrunk. This enable used simultaneous karyotyping and banding image preparation.
 
-Movable and Editable Legend
+## Movable and Editable Legend
 
 IdeoKar includes a customizable legend for chromosome ideograms. The legend automatically displays only the colors currently used for chromosome features and can be shown or hidden using the Show Legend controller. Users can drag the legend to reposition it on the image and edit individual legend descriptions. The legend can also be selected and deleted using the Delete key, and restored at any time by enabling Show Legend. The legend is included in exported image and PDF outputs.
 
 
-Abbreviations
+## Abbreviations
 
 | Parameter | Formula / Definition | Reference |
 |-----------|----------------------|-----------|
