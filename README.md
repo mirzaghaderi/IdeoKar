@@ -29,7 +29,7 @@ openjdk version "17.x.x"
 
 ## Run IdeoKar
 
-Place IdeoKar2.jar in a convenient folder. Open CMD and navigate to that folder:
+Place IdeoKar2.jar file in a convenient folder. Open CMD and navigate to that folder:
 
 ```
 cd C:\Path\To\IdeoKar
@@ -62,7 +62,7 @@ java -jar IdeoKar2.jar
 
 ## Workflow
 
-1. Open Image — select one or more images (same magnification, same
+1. Open Image(s) — select one or more images (same magnification, same
    genotype/replicate set). Each opens in its own tab.
 2. Define Scale — click the button, then click two points of known
    real-world distance in the active image; a popup asks for that distance
