@@ -17,14 +17,11 @@ To run IdeoKar from the compiled JAR file, the following are required:
 
 Check Java Installation. Open Command Prompt (CMD) or a terminal and run:
 
+```
 java -version
+```
 
 If Java is installed, you should see the installed Java version, for example:
-
-```
-java version "17.0.x"
-```
-or:
 
 ```
 openjdk version "17.x.x"
