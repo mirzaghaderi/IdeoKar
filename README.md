@@ -44,7 +44,7 @@ java -jar IdeoKar2.jar
 
 ![IdeoKar2 – three-window layout](IdeoKar2.jpg)
 
-*Figure 1 – The three windows of IdeoKar2.*
+*Figure 1 – The three windows of IdeoKar2. Also the chromosomes can be traced manually, but here the chromosomes were traced using auto-trace option. the tracing can then inspected and manually justified by retracing single chromosome, repositioning the centromere, and renaming the chromosomes.*
 
 
 
