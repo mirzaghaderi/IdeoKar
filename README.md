@@ -48,9 +48,16 @@ java -jar IdeoKar2.jar
 
 
 
-![IdeoKar2 – ideogram output](ideogram1.jpg)
 
-*Figure 1 – A sample ideogram output of IdeoKar2. The legend can be removed or edited simply by double click.*
+<figure>
+    <img src="ideogram1.jpg" style="width: 50%;" alt="Figure 2" />
+  <figcaption aria-hidden="true">
+    Figure 2: A sample ideogram output of IdeoKar2. The legend can be removed or edited simply by double click. 
+  </figcaption>
+</figure>
+
+<p><br></p>
+
 
 
 ## IdeoKar include three windows
