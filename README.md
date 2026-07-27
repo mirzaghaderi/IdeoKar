@@ -185,5 +185,10 @@ IdeoKar includes a customizable legend for chromosome ideograms. The legend auto
 | AI | Asymmetry Index = (CVCL * CVCI) / 100 | Paszko, 2006 |
 
 
+## Citing IdeoKar
+
+If you use IdeoKar in a publication, please cite:
+
+Mirzaghaderi, G. & Marzangi, K. (2015). IdeoKar: an ideogram constructing and karyotype analyzing software. Caryologia, 68(1), 31-35. https://doi.org/10.1080/00087114.2014.998526
 
 Contact email: gh.mirzaghaderi@uok.ac.ir
