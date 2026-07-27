@@ -47,6 +47,12 @@ java -jar IdeoKar2.jar
 *Figure 1 – The three windows of IdeoKar2.*
 
 
+
+![IdeoKar2 – ideogram output](ideogram1.jpg)
+
+*Figure 1 – A sample ideogram output of IdeoKar2. The legend can be removed or edited simply by double click.*
+
+
 ## IdeoKar include three windows
 
 1. Core window — toolbar (Open Image(s), Close Tab, Define Scale, Zoom In,
