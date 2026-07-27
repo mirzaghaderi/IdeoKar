@@ -52,7 +52,7 @@ java -jar IdeoKar2.jar
 <figure>
     <img src="ideogram1.jpg" style="width: 50%;" alt="Figure 2" />
   <figcaption aria-hidden="true">
-    Figure 2: A sample ideogram output of IdeoKar2. The legend can be removed or edited simply by double click. 
+    Figure 2: A sample ideogram output of IdeoKar2. The legend and labels can be removed or edited simply by double click. 
   </figcaption>
 </figure>
 
