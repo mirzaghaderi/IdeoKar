@@ -60,6 +60,16 @@ java -jar IdeoKar2.jar
 
 
 
+<figure>
+    <img src="windows4.jpg" style="width: 100%;" alt="Figure 3" />
+  <figcaption aria-hidden="true">
+    Figure 3: Four windows layout of the IdeoKar2. 
+  </figcaption>
+</figure>
+
+<p><br></p>
+
+
 ## IdeoKar include three windows
 
 1. Core window — toolbar (Open Image(s), Close Tab, Define Scale, Zoom In,
