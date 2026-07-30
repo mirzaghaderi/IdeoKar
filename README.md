@@ -339,7 +339,7 @@ Mirzaghaderi, G. & Marzangi, K. (2015). IdeoKar: an ideogram constructing and ka
 
 ## Training video
 
-https://studio.youtube.com/video/P-po20qPy2g/edit 
+https://www.youtube.com/watch?v=P-po20qPy2g
 
 
 ## Contact email
