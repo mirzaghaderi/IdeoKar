@@ -86,7 +86,7 @@ java -jar IdeoKar2.jar
 <p><br></p>
 
 
-## IdeoKar Windows
+## IdeoKar structure
 
 IdeoKar provides four main working windows:
 
