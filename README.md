@@ -336,4 +336,12 @@ A paper about IdeoKar2 has not been published yet. Meanwhile, if you use IdeoKar
 
 Mirzaghaderi, G. & Marzangi, K. (2015). IdeoKar: an ideogram constructing and karyotype analyzing software. Caryologia, 68(1), 31-35. https://doi.org/10.1080/00087114.2014.998526
 
-Contact email: gh.mirzaghaderi@uok.ac.ir
+
+## Training video
+
+https://studio.youtube.com/video/P-po20qPy2g/edit 
+
+
+## Contact email
+
+gh.mirzaghaderi@uok.ac.ir
