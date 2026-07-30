@@ -23,7 +23,7 @@ IdeoKar can be run in two ways:
  
 ### Run (Windows executable)
  
-No setup required. Keep IdeoKar.exe together with its accompanying
+No setup required. Download IdeoKar2_win.rar and extract. Keep IdeoKar.exe together with its accompanying
 folder (do not move the .exe out of that folder on its own), then
 double-click IdeoKar.exe to launch IdeoKar.
  
