@@ -7,36 +7,52 @@ including multi-row ideograms for allopolyploids (one row per genome) or
 
 ## System Requirements
 
-To run IdeoKar from the compiled JAR file, the following are required:
-
-- Operating System: Windows, Linux, or macOS
-- Java: Java Runtime Environment (JRE) or Java Development Kit (JDK)
-- Recommended Java version: Java 17 or newer
-
-## Run
-
+IdeoKar can be run in two ways:
+ 
+1. Windows executable (no installation requirements)
+   A standalone IdeoKar.exe, along with its accompanying folder of
+   supporting files, is included for Windows users. This bundles its own
+   Java runtime, so no separate Java install is needed.
+ 
+   * Operating System: Windows only
+ 
+2. Compiled JAR file (Windows, Linux, or macOS)
+   * Operating System: Windows, Linux, or macOS
+   * Java: Java Runtime Environment (JRE) or Java Development Kit (JDK)
+   * Recommended Java version: Java 17 or newer
+ 
+### Run (Windows executable)
+ 
+No setup required. Keep IdeoKar.exe together with its accompanying
+folder (do not move the .exe out of that folder on its own), then
+double-click IdeoKar.exe to launch IdeoKar.
+ 
+### Run (JAR file)
+ 
 Check Java Installation. Open Command Prompt (CMD) or a terminal and run:
-
+ 
 ```
 java -version
+ 
 ```
-
+ 
 If Java is installed, you should see the installed Java version, for example:
-
+ 
 ```
 openjdk version "17.x.x"
+ 
 ```
-
-## Run IdeoKar
-
+ 
+Run IdeoKar
 Place IdeoKar2.jar file in a convenient folder. Open CMD and navigate to that folder:
-
+ 
 ```
 cd C:\Path\To\IdeoKar
+ 
 ```
-
+ 
 Then run:
-
+ 
 ```
 java -jar IdeoKar2.jar
 ```
