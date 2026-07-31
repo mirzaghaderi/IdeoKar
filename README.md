@@ -240,10 +240,11 @@ and final quantitative analysis.
 
 1. **Open Image(s)** — select one or more images (same magnification, same
    genotype/replicate set). Each opens in its own tab.
-2. **Define Scale** — click the button, then click two points of known
+2. **Optional image processing** — This includes Crop, Remove background, knife tools described above.
+3. **Define Scale** — click the button, then click two points of known
    real-world distance in the active image. A popup asks for that distance
    in micrometers and derives pixels-per-micron for that tab.
-3. **Trace chromosomes** — use auto-trace when appropriate or trace manually.
+4. **Trace chromosomes** — use auto-trace when appropriate or trace manually.
    For manual tracing, left-click to lay down connected segments along the
    chromosome. At landmark points, either right-click for a context menu or
    use the following hotkeys:
@@ -253,28 +254,28 @@ and final quantitative analysis.
    - `Ctrl+G` — Green segment start/end.
    - `Ctrl+B` — Black segment (heterochromatin) start/end.
    - `Ctrl+F` — Finish chromosome (opens a naming dialog).
-4. **Inspect and adjust traces** — review automatically generated or manually
+5. **Inspect and adjust traces** — review automatically generated or manually
    traced chromosomes in the Core window. Retrace individual chromosomes,
    reposition centromeres, and correct chromosome names or assignments when
    needed.
-5. **Undo tracing** — use `Ctrl+Z` to undo a segment or use `Undo Chromosome`.
+6. **Undo tracing** — use `Ctrl+Z` to undo a segment or use `Undo Chromosome`.
    The latter can undo the most recent tracing action while a chromosome is in
    progress, or remove the last finished chromosome when no chromosome is
    currently being traced.
-6. **Select and delete a chromosome** — clicking a traced chromosome highlights
+7. **Select and delete a chromosome** — clicking a traced chromosome highlights
    it in yellow. Pressing `Delete` removes the selected chromosome.
-7. **Inspect the chromosome set in the Karyogram** — use the Karyogram window
+8. **Inspect the chromosome set in the Karyogram** — use the Karyogram window
    to review chromosome organization and identify chromosomes requiring further
    inspection. Clicking a chromosome in the Karyogram selects and highlights
    the corresponding trace in its source image, providing a direct connection
    between the Karyogram and the original metaphase image.
-8. **Repeat and finalize chromosome assignments** — trace and inspect all
+9. **Repeat and finalize chromosome assignments** — trace and inspect all
    chromosomes across all open tabs. Use consistent genome/sub-genome labels
    to group chromosomes into the same ideogram row and karyotype-parameter
    group; this is also how allopolyploid genomes are separated.
-9. **Run** — computes parameters and (re)builds the ideogram.
-10. **Save Table / Save Ideogram** — export results.
-11. **Zoom** — hold `Ctrl` and scroll the mouse wheel over the active image to
+10. **Run** — computes parameters and (re)builds the ideogram.
+11. **Save Table / Save Ideogram** — export results.
+12. **Zoom** — hold `Ctrl` and scroll the mouse wheel over the active image to
     zoom in or out. Zooming is centered on the exact location under the mouse
     pointer, allowing detailed inspection of a specific chromosome or image
     region.
