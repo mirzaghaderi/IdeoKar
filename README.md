@@ -135,35 +135,36 @@ is used for quantitative analysis.
 A recommended workflow is:
 
 1. **Open the metaphase image(s)** and define the appropriate scale.
-2. **Run auto-trace** when appropriate to generate initial chromosome traces.
-3. **Inspect the generated traces** in the Core window. Check that each trace
+2. **Optional image processing** for law quality images. This includes Crop, Remove background, knife tools.
+3. **Run auto-trace** when appropriate to generate initial chromosome traces.
+4. **Inspect the generated traces** in the Core window. Check that each trace
    follows the chromosome correctly and that the chromosome is not confused
    with background structures or neighboring chromosomes.
-4. **Manually adjust individual chromosomes when necessary.** A chromosome can
+5. **Manually adjust individual chromosomes when necessary.** A chromosome can
    be retraced or corrected individually rather than repeating the complete
    tracing process.
-5. **Check the centromere position** and reposition it when the automatically
+6. **Check the centromere position** and reposition it when the automatically
    detected or manually marked landmark is not correct. Accurate centromere
    placement is particularly important because short-arm and long-arm
    measurements, arm ratio, centromeric index, and chromosome classification
    depend on the centromere position.
-6. **Check chromosome names and assignments**, including chromosome number and
+7. **Check chromosome names and assignments**, including chromosome number and
    genome/sub-genome labels. Correct labels are important for grouping
    chromosomes into the appropriate karyogram and ideogram rows and for
    calculating group-level karyotype parameters.
-7. **Use the Karyogram window for whole-set inspection.** Review the chromosome
+8. **Use the Karyogram window for whole-set inspection.** Review the chromosome
    collection as an organized set and identify chromosomes that appear to be
    incorrectly assigned, mislabeled, inconsistently oriented, or in need of
    further inspection.
-8. **Select a chromosome in the Karyogram to inspect its original trace.**
+9. **Select a chromosome in the Karyogram to inspect its original trace.**
    Clicking a chromosome in the Karyogram selects the corresponding chromosome
    in its source image and highlights its trace. This provides a direct link
    between the organized karyogram view and the original metaphase image,
    allowing the user to verify the trace and make manual corrections without
    having to search through the image tabs for the chromosome.
-9. **Repeat inspection and correction** until the chromosome set is consistent
+10. **Repeat inspection and correction** until the chromosome set is consistent
    and the traces, centromeres, labels, and group assignments are satisfactory.
-10. **Run the analysis** only after the final inspection and adjustment. The
+11. **Run the analysis** only after the final inspection and adjustment. The
     resulting chromosome measurements, karyotype parameters, and ideogram are
     then based on the reviewed tracing data.
 
@@ -206,6 +207,34 @@ manual adjustments → Run → generate parameters and ideogram.**
 The Karyogram is therefore not only a presentation window; it is an important
 quality-control and manual inspection stage between initial chromosome tracing
 and final quantitative analysis.
+
+**Optional IMAGE PREPARATION (Before Auto tracing)**
+
+- 'Crop' freehand-draws an outline around the chromosomes you want
+  to keep: click 'Crop', drag an outline around them, and release
+  the mouse. After you confirm, everything outside the outline is
+  removed and the kept region is enlarged to fill the window. Any
+  chromosome trace entirely outside the outline is deleted; traces
+  partly inside are kept and shifted to match the new image.
+- 'Remove Background' opens a pop-up editor. It auto-detects the
+  background color from the image's edges, or click 'Pick
+  Background Color' and click a background pixel in the preview
+  to resample it. The Tolerance slider controls how aggressively
+  similar-colored pixels are treated as background, previewed
+  live. Replace the background with White (recommended -- stays
+  compatible with Auto Trace) or Transparent, then click Apply.
+- 'Knife' cuts chromosomes apart that are touching or overlapping,
+  so Auto Trace sees them as separate objects: click 'Knife', then
+  hold the left mouse button and drag across the connection, and
+  release. Color is sharply removed along the stroke as you drag.
+  Click 'Knife' again for each additional cut.
+- All three are edits to the open image, and Ctrl+Z undoes any
+  one of them. Unlike the original image file (which is never
+  modified), these edits ARE saved with the project: Save
+  Project writes a copy of the edited image alongside the
+  project file, so Open Project restores it exactly as last
+  seen, even if the original source file has since changed
+  or moved.
 
 ## Workflow
 
