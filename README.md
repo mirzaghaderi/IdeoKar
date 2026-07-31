@@ -240,10 +240,10 @@ and final quantitative analysis.
 
 1. **Open Image(s)** — select one or more images (same magnification, same
    genotype/replicate set). Each opens in its own tab.
-2. **Optional image processing** — This includes Crop, Remove background, knife tools described above.
-3. **Define Scale** — click the button, then click two points of known
+2. **Define Scale** — click the button, then click two points of known
    real-world distance in the active image. A popup asks for that distance
    in micrometers and derives pixels-per-micron for that tab.
+3. **Optional image processing** — This includes Crop, Remove background, knife tools described above.
 4. **Trace chromosomes** — use auto-trace when appropriate or trace manually.
    For manual tracing, left-click to lay down connected segments along the
    chromosome. At landmark points, either right-click for a context menu or
