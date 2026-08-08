@@ -450,7 +450,7 @@ an ideogram has been generated.
 The **Genomic Ideogram** plugin constructs an ideogram directly from
 genomic sequence data. It uses a FASTA file to obtain
 chromosome/scaffold sequences and lengths and can optionally use a GFF3
-annotation file to obtain centromere positions. It can also search the
+annotation file to obtain features information. It can also search the
 genomic sequences for approximate repeat copies and display the
 resulting repeat arrays as colored chromosome bands.
 
@@ -467,8 +467,7 @@ resulting repeat arrays as colored chromosome bands.
 
 **Load FASTA...** loads chromosome or scaffold sequences. The sequences
 are retained in memory for repeat searching, while chromosome lengths
-are used for the ideogram. **Load GFF3...** is optional. Features whose type contains `centromere`
-are used to define the centromere position.
+are used for the ideogram. **Load GFF3...** is optional but the features can be easily represented in separate track along the main chromosome.
 
 The chromosome table contains:
 
