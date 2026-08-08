@@ -454,6 +454,15 @@ annotation file to obtain centromere positions. It can also search the
 genomic sequences for approximate repeat copies and display the
 resulting repeat arrays as colored chromosome bands.
 
+<figure>
+    <img src="Figure 3.jpg" style="width: 50%;" alt="Figure 2" />
+  <figcaption aria-hidden="true">
+    Figure 3: Ideogram of Triticum dicoccoides generated using the Genomic Ideogram plugin, with the genome sequence and GFF3 annotation file as inputs. Three genomic tracks are displayed: (1) (GA)₂₅₀ repeat bands along the chromosomes; (2) gene density; and (3) long non-coding RNA (lncRNA) density. U2 small nuclear RNA genes are additionally searched and displayed as feature labels along the chromosomes. Light-gray connector lines indicate genes located on the negative (−) strand, whereas dark-gray connector lines indicate genes located on the positive (+) strand.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
 #### Loading genomic data
 
 **Load FASTA...** loads chromosome or scaffold sequences. The sequences
