@@ -463,6 +463,16 @@ resulting repeat arrays as colored chromosome bands.
 
 <p><br></p>
 
+
+<figure>
+    <img src="Figure 4.jpg" style="width: 100%;" alt="Figure 2" />
+  <figcaption aria-hidden="true">
+    Figure 4: Ideogram of Oryza sativa generated using the Genomic Ideogram plugin, with the genome sequence and GFF3 annotation file (v 1.0.63) as inputs. Three genomic tracks are displayed: (1) A centromeric repeat (AAACATGATTTTTGGACATATTGGAGTGTATTGGG; Max mismatch:2, Merge gap: 500, Min copies: 1) bands along the chromosomes; (2) gene density; and (3) non-coding RNA (ncRNA) density. tRNA genes are additionally searched and displayed as feature labels along the chromosomes. Light-gray connector lines indicate genes located on the negative (−) strand, whereas dark-gray connector lines indicate genes located on the positive (+) strand.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
 #### Loading genomic data
 
 **Load FASTA...** loads chromosome or scaffold sequences. The sequences
