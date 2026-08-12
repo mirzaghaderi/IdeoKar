@@ -454,20 +454,36 @@ annotation file to obtain features information. It can also search the
 genomic sequences for approximate repeat copies and display the
 resulting repeat arrays as colored chromosome bands.
 
+
+
 <figure>
-    <img src="Figure 3.jpg" style="width: 100%;" alt="Figure 2" />
+    <img src="Figure 4.jpg" style="width: 100%;" alt="Figure 2" />
   <figcaption aria-hidden="true">
-    Figure 3: Ideogram of Triticum dicoccoides generated using the Genomic Ideogram plugin, with the genome sequence and GFF3 annotation file as inputs. Three genomic tracks are displayed: (1) (GA)₂₅₀ repeat bands along the chromosomes; (2) gene density; and (3) long non-coding RNA (lncRNA) density. U2 small nuclear RNA genes are additionally searched and displayed as feature labels along the chromosomes. Light-gray connector lines indicate genes located on the negative (−) strand, whereas dark-gray connector lines indicate genes located on the positive (+) strand.
+    Figure 4: Human chromosome ideogram generated using the Genomic Ideogram plugin of the IdeoKar tool, showing telomeric sequence, gene-density, and long non-coding RNA (lncRNA)-density tracks. The X and Y chromosomes are positioned at the end of the ideogram. Telomeric sequences were identified by searching the corresponding genome FASTA sequence file.
   </figcaption>
 </figure>
 
 <p><br></p>
 
 
+
+
 <figure>
-    <img src="Figure 4.jpg" style="width: 100%;" alt="Figure 2" />
+    <img src="Figure 5.jpg" style="width: 100%;" alt="Figure 2" />
   <figcaption aria-hidden="true">
-    Figure 4: Ideogram of Oryza sativa generated using the Genomic Ideogram plugin, with the genome sequence and GFF3 annotation file (v 1.0.63) as inputs. Three genomic tracks are displayed: (1) A centromeric repeat (AAACATGATTTTTGGACATATTGGAGTGTATTGGG; Max mismatch:2, Merge gap: 500, Min copies: 1) (A partial segment of AF058902, Dong et al., 1998, PNAS) bands along the chromosomes; (2) gene density; and (3) non-coding RNA (ncRNA) density. tRNA genes are additionally searched and displayed as feature labels along the chromosomes. Light-gray connector lines indicate genes located on the negative (−) strand, whereas dark-gray connector lines indicate genes located on the positive (+) strand.
+    Figure 5: Ideogram of Triticum dicoccoides generated using the Genomic Ideogram plugin, with the genome sequence and GFF3 annotation file as inputs. Three genomic tracks are displayed: (1) (GA)₂₅₀ repeat bands along the chromosomes; (2) gene density; and (3) long non-coding RNA (lncRNA) density. U2 small nuclear RNA genes are additionally searched and displayed as feature labels along the chromosomes. Light-gray connector lines indicate genes located on the negative (−) strand, whereas dark-gray connector lines indicate genes located on the positive (+) strand.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
+
+
+
+<figure>
+    <img src="Figure 6.jpg" style="width: 100%;" alt="Figure 2" />
+  <figcaption aria-hidden="true">
+    Figure 6: Ideogram of Oryza sativa generated using the Genomic Ideogram plugin, with the genome sequence and GFF3 annotation file (v 1.0.63) as inputs. Three genomic tracks are displayed: (1) A centromeric repeat (AAACATGATTTTTGGACATATTGGAGTGTATTGGG; Max mismatch:2, Merge gap: 500, Min copies: 1) (A partial segment of AF058902, Dong et al., 1998, PNAS) bands along the chromosomes; (2) gene density; and (3) non-coding RNA (ncRNA) density. tRNA genes are additionally searched and displayed as feature labels along the chromosomes. Light-gray connector lines indicate genes located on the negative (−) strand, whereas dark-gray connector lines indicate genes located on the positive (+) strand.
   </figcaption>
 </figure>
 
