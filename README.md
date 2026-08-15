@@ -481,13 +481,26 @@ resulting repeat arrays as colored chromosome bands.
 
 
 <figure>
-    <img src="Figure 6.jpg" style="width: 100%;" alt="Figure 2" />
+    <img src="Figure 6.jpg" style="width: 100%;" alt="Figure 6" />
   <figcaption aria-hidden="true">
     Figure 6: Ideogram of Oryza sativa generated using the Genomic Ideogram plugin, with the genome sequence and GFF3 annotation file (v 1.0.63) as inputs. Three genomic tracks are displayed: (1) A centromeric repeat (AAACATGATTTTTGGACATATTGGAGTGTATTGGG; Max mismatch:2, Merge gap: 500, Min copies: 1) (A partial segment of AF058902, Dong et al., 1998, PNAS) bands along the chromosomes; (2) gene density; and (3) non-coding RNA (ncRNA) density. tRNA genes are additionally searched and displayed as feature labels along the chromosomes. Light-gray connector lines indicate genes located on the negative (−) strand, whereas dark-gray connector lines indicate genes located on the positive (+) strand.
   </figcaption>
 </figure>
 
 <p><br></p>
+
+
+
+<figure>
+    <img src="Figure 7.jpg" style="width: 100%;" alt="Figure 7" />
+  <figcaption aria-hidden="true">
+    Figure 7: Genomic distribution of candidate genes across  rice chromosomes, generated with the Genomic Ideogram plugin of IdeoKar2. Each chromosome is represented by three bars: Telomeric repeats, local gene density, and lncRNA density. Some genes are labeled with their gene symbol. Unlabeled symbols correspond to additional family members whose positions are shown but not individually named. Where multiple genes cluster within a short physical interval, their connector lines converge to a single locus on the chromosome to indicate tandem or closely linked arrangement.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
+
 
 #### Loading genomic data
 
