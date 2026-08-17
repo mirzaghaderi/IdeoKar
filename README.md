@@ -500,6 +500,15 @@ resulting repeat arrays as colored chromosome bands.
 
 <p><br></p>
 
+<figure>
+    <img src="Figure 8.jpg" style="width: 100%;" alt="Figure 8" />
+  <figcaption aria-hidden="true">
+    Figure 7: Some other adjustments to the above case in figure 7.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
 
 
 #### Loading genomic data
