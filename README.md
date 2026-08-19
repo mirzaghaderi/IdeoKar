@@ -510,6 +510,16 @@ resulting repeat arrays as colored chromosome bands.
 <p><br></p>
 
 
+<figure>
+    <img src="Figure 9.jpg" style="width: 100%;" alt="Figure 9" />
+  <figcaption aria-hidden="true">
+    Figure 9: Circular comparative genomic ideogram generated using the Ideogram plugin of IdeoKar2, showing chromosome-scale genomic features and supposed interchromosomal relationships between Oryza sativa and Plantago major. Chromosomes are arranged in a circular layout and labeled with chromosome/linkage-group identifiers, with genomic coordinates indicated by the outer tick marks. For O. sativa, gene density is shown as a blue-to-red quantitative track, together with an additional gene-density profile. For P. major, gene, exon, CDS, and mRNA density tracks are displayed using distinct colors. Long non-coding RNA (lncRNA) features are indicated in magenta, while selected annotated features are displayed with labels and connector lines.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
+
 
 #### Loading genomic data
 
