@@ -448,9 +448,9 @@ an ideogram has been generated.
 ### Genomic Ideogram plugin
 
 The **Genomic Ideogram** plugin constructs an ideogram directly from
-genomic sequence data. It uses a FASTA file to obtain
-chromosome/scaffold sequences and lengths and can optionally use a GFF3
-annotation file to obtain features information. It can also search the
+genomic sequence data. It uses a FASTA file or a simple 3-column chromosome length table to obtain
+chromosome sequences or lengths and can optionally use a GFF3
+annotation file to obtain features information. If the genome FASTA sequence is loaded instead of the 3-column chromosome length table, it can also search the
 genomic sequences for approximate repeat copies and display the
 resulting repeat arrays as colored chromosome bands.
 
@@ -459,7 +459,7 @@ resulting repeat arrays as colored chromosome bands.
 <figure>
     <img src="Figure 4.jpg" style="width: 100%;" alt="Figure 2" />
   <figcaption aria-hidden="true">
-    Figure 4: Human chromosome ideogram generated using the Genomic Ideogram plugin of the IdeoKar tool, showing telomeric sequence, gene-density, and long non-coding RNA (lncRNA)-density tracks. The X and Y chromosomes are positioned at the end of the ideogram. Telomeric sequences were identified by searching the corresponding genome FASTA sequence file.
+    Figure 4: Human chromosome ideogram generated using the Genomic Ideogram plugin of the IdeoKar2 tool, showing telomeric sequence, gene-density, and long non-coding RNA (lncRNA)-density tracks. The X and Y chromosomes are positioned at the end of the ideogram. Telomeric sequences were identified by searching the corresponding genome FASTA sequence file.
   </figcaption>
 </figure>
 
@@ -513,7 +513,7 @@ resulting repeat arrays as colored chromosome bands.
 <figure>
     <img src="Figure 9.jpg" style="width: 100%;" alt="Figure 9" />
   <figcaption aria-hidden="true">
-    Figure 9: Circular comparative genomic ideogram generated using the Ideogram plugin of IdeoKar2, showing chromosome-scale genomic features and supposed interchromosomal relationships between Oryza sativa and Plantago major. Chromosomes are arranged in a circular layout and labeled with chromosome/linkage-group identifiers, with genomic coordinates indicated by the outer tick marks. For O. sativa, gene density is shown as a blue-to-red quantitative track, together with an additional gene-density profile. For P. major, gene, exon, CDS, and mRNA density tracks are displayed using distinct colors. Long non-coding RNA (lncRNA) features are indicated in magenta, while selected annotated features are displayed with labels and connector lines.
+    Figure 9: Circular comparative genomic ideogram generated using the Genomic Ideogram plugin of IdeoKar2, showing chromosome-scale genomic features and supposed interchromosomal relationships between Oryza sativa and Plantago major. Chromosomes are arranged in a circular layout and labeled with chromosome/linkage-group identifiers, with genomic coordinates indicated by the outer tick marks. For O. sativa, gene density is shown as a blue-to-red track, together with an additional gene-density profile. For P. major, gene, exon, CDS, and mRNA density tracks are displayed using distinct colors. Long non-coding RNA (lncRNA) features are indicated in magenta, while selected annotated features are displayed with labels and connector lines.
   </figcaption>
 </figure>
 
@@ -523,7 +523,7 @@ resulting repeat arrays as colored chromosome bands.
 <figure>
     <img src="Figure 10.jpg" style="width: 100%;" alt="Figure 10" />
   <figcaption aria-hidden="true">
-    Figure 10: An example of the circular genomic ideogram for common wheat generated using the Ideogram plugin of IdeoKar2.
+    Figure 10: An example of the circular genomic ideogram for common wheat generated using the Genomic Ideogram plugin of IdeoKar2 showing chromosomal location of the wheat COL genes. Homoeologs are mapped to wheat chromosomes (composed of A, B, and D subgenomes) plus the unassembled (Un) part of the genome. Homoeologs were linked using curved lines (Ribbons). Chromosomes are banded by uploading cytoband svg file which shows banding according to pTa535-1 (red bands) and (GAA)10 (blue bands) FISH patterns. Chromosome number is indicated in the outside layer. Here, Bins per Mb was defined as 0.007 which devided each chromosome to 3 (1D) to 6 (3B) bins with different gene densities.
   </figcaption>
 </figure>
 
@@ -533,31 +533,24 @@ resulting repeat arrays as colored chromosome bands.
 
 #### Loading genomic data
 
-**Load FASTA...** loads chromosome or scaffold sequences. The sequences
-are retained in memory for repeat searching, while chromosome lengths
-are used for the ideogram. **Load GFF3...** is optional but the features can be easily represented in separate track along the main chromosome.
+**Load FASTA or ChrCoordinate** loads chromosome or scaffold sequences or a three column (chromosome, start, end) table of the chromosome length. If the genome FASTA sequence is loaded, it is also possible to search repeats or any other sequences and show them on chromosomes, **Load GFF3...** is optional but the features can be easily represented in separate track along the main chromosome.
 
 The chromosome table contains:
 
--   **Id** --- FASTA sequence identifier.
+-   **Id** --- FASTA sequence identifier or chromosome name.
 -   **Genome** --- genome/sub-genome grouping label.
 -   **Display Name** --- chromosome label shown in the ideogram.
 -   **Length (bp)** --- sequence length.
--   **Centromere (bp)** --- centromere position in the sequence.
--   **Bands** --- number of repeat bands currently assigned to the
-    chromosome.
+-   **Centromere (bp)** --- optional centromere position in the sequence.
+-   **Bands** --- number of repeat bands currently assigned to the chromosome.
 
-Genome and Display Name are editable so that chromosomes can be grouped
-and labeled differently from their original FASTA/GFF3 identifiers.
 
 #### Finding and adding repeat bands
 
-The **Find a repeat and add it as a band** panel provides:
+The **Find a repeat and add it as a band** panel is activated if the genome FASTA sequence is loaded instead of the 3-column chromosome length table:
 
--   **Unit sequence** --- repeat sequence to search for, such as
-    `TTAGGG`.
--   **Max mismatches** --- maximum number of substitutions allowed for
-    each repeat copy.
+-   **Unit sequence** --- repeat sequence to search for, such as `TTAGGG`.
+-   **Max mismatches** --- maximum number of substitutions allowed for each repeat copy.
 -   **Merge gap (bp)** --- maximum gap between nearby matches for them
     to be merged into one repeat array.
 -   **Min copies** --- minimum number of merged repeat copies required
