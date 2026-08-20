@@ -1,31 +1,23 @@
 # IdeoKar2
 
 A Java tool for extracting chromosomal/karyotypic
-parameters from metaphase chromosome-spread images and building ideograms,
-including multi-row ideograms for allopolyploids (one row per genome) or
- multi-row ideograms for multi-species.
+parameters from metaphase chromosome-spread images and building ideograms from chromosomes images or genomic data,
+for single species, multi-species or allopolyploids.
 
 ## System Requirements
 
-IdeoKar can be run in two ways:
+IdeoKar2 can be run in two ways:
  
-1. Windows executable (no installation requirements)
-   A standalone IdeoKar.exe, along with its accompanying folder of
-   supporting files, is included for Windows users. This bundles its own
-   Java runtime, so no separate Java install is needed.
- 
-   * Operating System: Windows only
+1. Installing on windows using msi installation file (Operating System: Windows only)
  
 2. Compiled JAR file (Windows, Linux, or macOS)
    * Operating System: Windows, Linux, or macOS
    * Java: Java Runtime Environment (JRE) or Java Development Kit (JDK)
    * Recommended Java version: Java 17 or newer
  
-### Run (Windows executable)
+### Installing on Windows
  
-No setup required. Download IdeoKar2_win.rar and extract. Keep IdeoKar.exe together with its accompanying
-folder (do not move the .exe out of that folder on its own), then
-double-click IdeoKar.exe to launch IdeoKar.
+Download IdeoKar2_win.msi and extract. Instal as a common windows installer then double-click IdeoKar2 icon to launch IdeoKar.
  
 ### Run (JAR file)
  
@@ -86,9 +78,9 @@ java -jar IdeoKar2.jar
 <p><br></p>
 
 
-## IdeoKar structure
+## IdeoKar2 structure
 
-IdeoKar provides four main working windows:
+IdeoKar2 provides four main working windows:
 
 1. **Core window** — contains the main toolbar (`Open Image(s)`, `Close Tab`,
    `Define Scale`, `Zoom In`, `Zoom Out`, `Undo Chromosome`, `Run`,
