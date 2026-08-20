@@ -520,6 +520,16 @@ resulting repeat arrays as colored chromosome bands.
 <p><br></p>
 
 
+<figure>
+    <img src="Figure 10.jpg" style="width: 100%;" alt="Figure 10" />
+  <figcaption aria-hidden="true">
+    Figure 10: An example of the circular genomic ideogram for common wheat generated using the Ideogram plugin of IdeoKar2.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
+
 
 #### Loading genomic data
 
