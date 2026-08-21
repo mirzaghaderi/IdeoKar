@@ -67,26 +67,19 @@ java -jar IdeoKar2.jar
 
 ## IdeoKar2 main working windows
 
-1. **Core window** — contains the main toolbar (`Open Image(s)`, `Close Tab`,
-   `Define Scale`, `Zoom In`, `Zoom Out`, `Undo Chromosome`, `Run`,
-   `Save Ideogram`, `Save Table`, and `Help`) and a tabbed area with one
-   tab per opened image. This is the main workspace for image viewing,
+1. **Core window** — contains the main toolbar and a tabbed area with one
+   tab per opened image. This is the main workspace for chromosome spread viewing,
    chromosome tracing, scale definition, and manual inspection of traces.
 
-2. **Parameters window** — opens or refreshes when you click `Run`. It contains
+2. **Parameters window** — opens or refreshes when you click `Run Ideogram`. It contains
    three tabs:
    - **Karyotype parameters** — per-genome or per-sub-genome aggregates.
    - **Chromosomal parameters** — per-chromosome results.
    - **Raw data** — traced coordinates and landmark data.
 
-3. **Ideogram window** — opens or refreshes after `Run`. It displays one row
-   per genome/sub-genome, with chromosomes sorted longest-first and aligned
-   on a common centromere line, together with a scale bar. It has its own
-   `Save Ideogram` button, which is also accessible from the Core window
-   toolbar. The ideogram legend and labels can be edited or removed as
-   described below.
+3. **Ideogram window** — opens after `Run Ideogram`. It displays ideogram and contains adjusting controllers. 
 
-4. **Karyogram window** — provides an organized visual view of the traced
+4. **Karyogram window** — opens after `Run Ideogram` and provides an organized visual view of the traced
    chromosomes and is particularly useful for quality control and manual
    inspection of chromosome assignments. Chromosomes can be reviewed as a
    group, and the Karyogram can be used to identify chromosomes that require
