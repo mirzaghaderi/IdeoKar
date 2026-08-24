@@ -65,7 +65,7 @@ java -jar IdeoKar2.jar
 <p><br></p>
 
 
-## IdeoKar2 main working windows
+## IdeoKar2 main windows
 
 1. **Core window**: contains the main karyotyping toolbar and a tabbed area with one
    tab per opened image. This is the main workspace for chromosome spread viewing,
@@ -94,71 +94,17 @@ IdeoKar2 supports both **automatic chromosome tracing (auto-trace)** and
 **manual chromosome tracing**. Auto-tracing can substantially speed up the
 initial extraction of chromosome traces from suitable metaphase spread images,
 while manual tracing remains available when a chromosome is not correctly
-traced.
-
-Automatic tracing should be treated as an initial tracing step rather than as
-a substitute for visual quality control. Depending on image quality, chromosome
-overlap, background structure, staining intensity, and chromosome boundaries,
-an automatically generated trace may require correction before the chromosome
+traced. Automatic tracing should be treated as an initial tracing step rather than as
+a substitute for visual quality control. Depending on image quality and chromosome
+overlap, an automatically generated trace may require correction before the chromosome
 is used for quantitative analysis.
 
-A recommended workflow is:
+## A recommended workflow
 
-1. **Open the metaphase image(s)** and define the appropriate scale.
-2. **Optional image processing** for law quality images. This includes Crop, Remove background, knife tools.
-3. **Run auto-trace** when appropriate to generate initial chromosome traces.
-4. **Inspect the generated traces** in the Core window. Check that each trace
-   follows the chromosome correctly and that the chromosome is not confused
-   with background structures or neighboring chromosomes.
-5. **Manually adjust individual chromosomes when necessary.** A chromosome can
-   be retraced or corrected individually rather than repeating the complete
-   tracing process.
-6. **Check the centromere position** and reposition it when the automatically
-   detected or manually marked landmark is not correct. Accurate centromere
-   placement is particularly important because short-arm and long-arm
-   measurements, arm ratio, centromeric index, and chromosome classification
-   depend on the centromere position.
-7. **Check chromosome names and assignments**, including chromosome number and
-   genome/sub-genome labels. Correct labels are important for grouping
-   chromosomes into the appropriate karyogram and ideogram rows and for
-   calculating group-level karyotype parameters.
-8. **Use the Karyogram window for whole-set inspection.** Review the chromosome
-   collection as an organized set and identify chromosomes that appear to be
-   incorrectly assigned, mislabeled, inconsistently oriented, or in need of
-   further inspection.
-9. **Select a chromosome in the Karyogram to inspect its original trace.**
-   Clicking a chromosome in the Karyogram selects the corresponding chromosome
-   in its source image and highlights its trace. This provides a direct link
-   between the organized karyogram view and the original metaphase image,
-   allowing the user to verify the trace and make manual corrections without
-   having to search through the image tabs for the chromosome.
-10. **Repeat inspection and correction** until the chromosome set is consistent
-   and the traces, centromeres, labels, and group assignments are satisfactory.
-11. **Run the analysis** only after the final inspection and adjustment. The
-    resulting chromosome measurements, karyotype parameters, and ideogram are
-    then based on the reviewed tracing data.
-
-### Karyogram-Based Quality Control
-
-The Karyogram window is especially useful after auto-tracing because it provides
-a chromosome-level overview that complements inspection of individual
-metaphase images. It helps the user review the chromosome set as a whole rather
-than evaluating each trace in isolation.
-
-The Karyogram can be used to highlight the selected chromosome trace in the source image for detailed inspection. 
-This source-image/Karyogram connection is particularly useful when many
-chromosomes have been traced across several image tabs. Instead of manually
-searching each source image for a chromosome identified during Karyogram
-inspection, the user can select the chromosome in the Karyogram and use the
-highlighted source trace as a direct visual reference.
-
-## Workflow
-
-1. **Open Image(s)**: select one or more images. Each opens in its own tab.
-2. **Define Scale**: click the button, then click two points of known
-   distance (scale bar) in the active image. A popup asks for that distance in micrometers.
-3. **Optional image processing**: This includes Crop, Remove background, knife tools described above.
-4. **Trace chromosomes* use auto-trace when appropriate or trace manually.
+1. Open one or more chromosome spread images. Each opens in its own tab.
+2. click the button, then click two points of known distance (scale bar) in the active image. A popup asks for that distance in micrometers.
+3. Optional image processing: This includes Crop, Remove background, knife tools described above.
+4. Trace chromosomes: use auto-trace when appropriate or trace manually.
    For manual tracing, left-click to lay down connected segments along the
    chromosome. At landmark points, either right-click for a context menu or
    use the following hotkeys:
@@ -168,28 +114,24 @@ highlighted source trace as a direct visual reference.
    - `Ctrl+G` — Green segment start/end.
    - `Ctrl+B` — Black segment (heterochromatin) start/end.
    - `Ctrl+F` — Finish chromosome (opens a naming dialog).
-5. **Inspect and adjust traces**: review automatically generated or manually
+5. Inspect and adjust traces: review automatically generated or manually
    traced chromosomes in the Core window. Retrace individual chromosomes if required,
    reposition centromeres, and correct chromosome names or assignments when
-   needed.
-6. **Undo tracing**: use `Ctrl+Z` to undo a segment or use `Undo Chromosome`.
-   The latter can undo the most recent tracing action while a chromosome is in
-   progress, or remove the last finished chromosome when no chromosome is
-   currently being traced.
-7. **Select and delete a chromosome**: clicking a traced chromosome highlights
+   needed. Use `Ctrl+Z` to undo a segment or use `Undo Chromosome`.
+6. Select and delete a chromosome: clicking a traced chromosome highlights
    it in yellow. Pressing `Delete` removes the selected chromosome.
-8. **Run karyogram**: Inspect the chromosome set in the Karyogram** — use the Karyogram window
-   to review chromosome organization and identify chromosomes requiring further
-   inspection. Clicking a chromosome in the Karyogram selects and highlights
-   the corresponding trace in its source image, providing a direct connection
-   between the Karyogram and the original metaphase image.
-9. **Repeat and finalize chromosome assignments**: trace and inspect all
-   chromosomes across all open tabs. Use consistent genome/sub-genome labels
-   to group chromosomes into the same ideogram row and karyotype-parameter
-   group; this is also how allopolyploid genomes are separated.
-10. **Run ideogram**: computes parameters and (re)builds the ideogram.
-11. **Save Table / Save Ideogram**: export results.
-12. **Zoom** — hold `Ctrl` and scroll the mouse wheel over the active image to
+7. 'Run Karyogram' opens a window that copies every finished traced
+  chromosome out of its source image as a real cutout and gives each genome/sub-genome
+  its own row. Within a row, homologs (same number, whether traced in
+  the same image or different images) are grouped side by side, ordered left to right from largest to smallest.
+Drag a chromosome onto another group (in the same row or a
+  different genome's row) to reassign it there, or drag it within
+  its own group to reorder it. Each time you do this, every row is renumbered from 1 in size order and the new numbers are written back to this tracing window
+
+
+8. Run ideogram: computes parameters and (re)builds the ideogram.
+9. Save Table / Save Ideogram: export results.
+10. Zoom — hold `Ctrl` and scroll the mouse wheel over the active image to
     zoom in or out. Zooming is centered on the exact location under the mouse
     pointer, allowing detailed inspection of a specific chromosome or image
     region.
@@ -275,7 +217,7 @@ IdeoKar includes a customizable legend for chromosome ideograms. The legend auto
 
 
 
-## Plugins
+# Plugins
 
 IdeoKar2 includes two built-in plugins that provide alternative ways to
 construct an ideogram without manually tracing chromosomes in a
@@ -283,7 +225,7 @@ metaphase image. Both plugins use the same IdeoKar ideogram rendering
 and parameter-calculation framework, so their generated ideograms can be
 styled and exported through the normal Ideogram window.
 
-### Dating Data plugin
+## Dating Data plugin
 
 The **Dating Data** plugin builds an ideogram directly from measured
 chromosome dimensions. It is useful when chromosome measurements are
@@ -359,7 +301,7 @@ normal IdeoKar facilities.
 **Save Table (.xlsx)** exports the calculated numerical parameters after
 an ideogram has been generated.
 
-### Genomic Ideogram plugin
+## Genomic Ideogram plugin
 
 The **Genomic Ideogram** plugin constructs an ideogram directly from
 genomic sequence data. It uses a FASTA file or a simple 3-column chromosome length table to obtain
