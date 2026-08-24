@@ -366,69 +366,16 @@ Centromere (bp) (optional centromere position in the sequence, and Bands (number
 #### Finding and adding repeat bands
 
 The **Find a repeat and add it as a band** panel is activated if the genome FASTA sequence is loaded instead of the 3-column chromosome length table:
-
-Unit sequence (repeat sequence to search for, such as `TTAGGG`),
-Max mismatches (maximum number of substitutions allowed for each repeat copy),
-Merge gap (bp) (maximum gap between nearby matches for them to be merged into one repeat array),
-Min copies (minimum number of merged repeat copies required for a band to be retained),
-Also search reverse complement** --- additionally searches for the reverse-complement sequence),
-Color (Red, Orange, Green, or Black),
-Label (optional band label), and Search (searches either all loaded chromosomes or only the selected chromosomes.
-
-Before **Find & Add Band**, whitespace, Enter/newline characters, and
-sequence gap characters (`-`) are automatically removed from the Unit
-sequence. The remaining sequence is converted to uppercase and checked
-so that it contains only `A`, `C`, `G`, `T`, or `N`.
-
-The repeat search uses a fixed-length approximate sequence comparison.
-It scans the chromosome sequence for windows matching the entered unit
-within the allowed number of mismatches. If reverse-complement searching
-is enabled, the reverse complement is searched as well. Ambiguous `N`
-bases do not count as matching bases.
-
-Nearby matches are merged into a single repeat-array band. This allows a
-tandem repeat containing many individual copies to be represented as one
-continuous colored region rather than as many separate small marks.
-Increasing **Min copies** can be useful when permissive mismatch
-settings produce incidental matches.
-
-The search can be repeated with different repeat units, colors, and
-labels. Bands accumulate on the chromosomes and can be removed from the
-**Repeat bands found so far** table with **Remove Selected Band**.
-
-
-#### Selecting chromosomes
-
-The chromosome table supports **multiple-row selection**.
-
 For repeat searching, choose **Selected chromosomes** in the **Search**
 control to restrict **Find & Add Band** to the selected chromosome rows.
-Ctrl-click can be used to select individual non-contiguous rows and
-Shift-click can be used to select a range.
-
 The same chromosome selection also controls **Generate Ideogram**: when
 one or more chromosome rows are selected, **only those selected
 chromosomes are drawn in the generated ideogram**. When the table
 selection is cleared, the plugin returns to the default behavior of
 drawing all loaded chromosomes.
-
 This makes it possible, for example, to inspect or generate an ideogram
 for a particular chromosome or subset of chromosomes without removing
-the other chromosomes from the loaded dataset.
-
-#### Generating and exporting the genomic ideogram
-
-Click **Generate Ideogram** after checking the chromosome, centromere,
-and band data. The selected chromosome subset, or all chromosomes when
-no table selection is active, is converted to the standard IdeoKar
-chromosome representation and displayed in the normal Ideogram window.
-
-The Ideogram window provides the same styling and export facilities used
-by IdeoKar elsewhere. **Save Table (.xlsx)** exports the calculated
-parameters after generation.
-
-
-
+the other chromosomes from the loaded dataset. Click **Generate Ideogram** to generate Ideogram.
 
 ## Citing IdeoKar2
 
