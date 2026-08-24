@@ -127,8 +127,6 @@ is used for quantitative analysis.
 Drag a chromosome onto another group (in the same row or a
   different genome's row) to reassign it there, or drag it within
   its own group to reorder it. Each time you do this, every row is renumbered from 1 in size order and the new numbers are written back to this tracing window
-
-
 8. Run ideogram: computes parameters and (re)builds the ideogram.
 9. Save Table / Save Ideogram: export results.
 10. Zoom — hold `Ctrl` and scroll the mouse wheel over the active image to
