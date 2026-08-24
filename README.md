@@ -225,83 +225,50 @@ styled and exported through the normal Ideogram window.
 
 ## Dating Data plugin
 
-The **Dating Data** plugin builds an ideogram directly from measured
+The Dating Data plugin builds an ideogram directly from measured
 chromosome dimensions. It is useful when chromosome measurements are
 already available and an image-tracing workflow is unnecessary.
-
 Open the plugin from the IdeoKar plugin menu. The main table contains:
+Genome, Number, Short arm (µm), Long arm (µm), and Bands.
 
--   **Genome** --- genome/sub-genome identifier used to group
-    chromosomes into ideogram rows.
--   **Number** --- chromosome number or label.
--   **Short arm (µm)** --- measured short-arm length.
--   **Long arm (µm)** --- measured long-arm length.
--   **Bands** --- number of colored bands assigned to the chromosome.
-
-No chromosome image or tracing is required. Enter the short- and
-long-arm lengths in micrometers.
 
 #### Adding bands
 
 Select a chromosome and use **Add Band** to add a colored segment. Each
-band is defined by:
-
--   **Arm** --- Short arm or Long arm.
--   **Start (µm from centromere)** --- starting position measured from
-    the centromere toward the arm tip.
--   **End (µm from centromere)** --- ending position measured from the
-    centromere.
--   **Color** --- Red, Orange, Green, or Black.
-
-A position of 0 µm corresponds to the centromere. Bands can represent
-features such as heterochromatin blocks, NOR/rDNA sites, telomeric
-marks, or other chromosome features that the user wants to display.
-
-The plugin checks that band positions do not extend beyond the
-corresponding arm length.
-
-#### Genome grouping and homologous measurements
-
-Chromosomes with the same **Genome** label are displayed together as one
+band is defined by Arm (Short arm or Long arm), Start (µm from centromere) (starting position measured from
+    the centromere toward the arm tip), End (µm from centromere) (ending position measured from the
+    centromere, and Color (Red, Orange, Green, or Black).
+Chromosomes with the same Genome label are displayed together as one
 ideogram row. If the Genome field is blank, the chromosomes are placed
 in a single row.
-
-Chromosomes having the same **Genome + Number** are treated as replicate
+Chromosomes having the same Genome + Number are treated as replicate
 measurements of the same homologous chromosome group. Their measurements
 are averaged in the same way that replicated chromosome measurements are
 handled elsewhere in IdeoKar.
 
 #### Importing and saving Dating Data
 
-The plugin provides:
-
--   **Load Example** --- loads a built-in example dataset.
--   **Load CSV...** --- imports chromosome and band measurements from a
-    spreadsheet-friendly CSV file.
--   **Save CSV...** --- saves the current chromosome and band data as
-    CSV.
--   **Load Project (.ideokar)...** --- imports finished,
+The plugin provides Load Example (loads a built-in example dataset), 
+Load CSV... (imports chromosome and band measurements from a
+    spreadsheet-friendly CSV file, Save CSV... (saves the current chromosome and band data as
+    CSV), Load Project (imports finished,
     centromere-marked chromosomes and their colored segments directly
-    from an IdeoKar project.
+    from an IdeoKar project).
 
 When importing an IdeoKar project, chromosomes without a marked
 centromere are skipped because the plugin needs the centromere to
 determine which arm contains each colored segment.
-
-#### Generating the ideogram
-
-Click **Generate Ideogram** after entering and checking the data. The
+Click Generate Ideogram** after entering and checking the data. The
 plugin converts the measurements into the same chromosome representation
 used by the main IdeoKar application and opens the standard Ideogram
-window. The resulting ideogram can then be styled and exported using the
-normal IdeoKar facilities.
-
-**Save Table (.xlsx)** exports the calculated numerical parameters after
+window. 
+Save Table (.xlsx) exports the calculated numerical parameters after
 an ideogram has been generated.
+
 
 ## Genomic Ideogram plugin
 
-The **Genomic Ideogram** plugin constructs an ideogram directly from
+The Genomic Ideogram plugin constructs an ideogram directly from
 genomic sequence data. It uses a FASTA file or a simple 3-column chromosome length table to obtain
 chromosome sequences or lengths and can optionally use a GFF3
 annotation file to obtain features information. If the genome FASTA sequence is loaded instead of the 3-column chromosome length table, it can also search the
@@ -389,32 +356,24 @@ resulting repeat arrays as colored chromosome bands.
 
 **Load FASTA or ChrCoordinate** loads chromosome or scaffold sequences or a three column (chromosome, start, end) table of the chromosome length. If the genome FASTA sequence is loaded, it is also possible to search repeats or any other sequences and show them on chromosomes, **Load GFF3...** is optional but the features can be easily represented in separate track along the main chromosome.
 
-The chromosome table contains:
-
--   **Id** --- FASTA sequence identifier or chromosome name.
--   **Genome** --- genome/sub-genome grouping label.
--   **Display Name** --- chromosome label shown in the ideogram.
--   **Length (bp)** --- sequence length.
--   **Centromere (bp)** --- optional centromere position in the sequence.
--   **Bands** --- number of repeat bands currently assigned to the chromosome.
+The chromosome table contains Id (FASTA sequence identifier or chromosome name),
+Genome (genome/sub-genome grouping label),
+Display Name (chromosome label shown in the ideogram),
+Length (bp) (sequence length), and 
+Centromere (bp) (optional centromere position in the sequence, and Bands (number of repeat bands currently assigned to the chromosome).
 
 
 #### Finding and adding repeat bands
 
 The **Find a repeat and add it as a band** panel is activated if the genome FASTA sequence is loaded instead of the 3-column chromosome length table:
 
--   **Unit sequence** --- repeat sequence to search for, such as `TTAGGG`.
--   **Max mismatches** --- maximum number of substitutions allowed for each repeat copy.
--   **Merge gap (bp)** --- maximum gap between nearby matches for them
-    to be merged into one repeat array.
--   **Min copies** --- minimum number of merged repeat copies required
-    for a band to be retained.
--   **Also search reverse complement** --- additionally searches for the
-    reverse-complement sequence.
--   **Color** --- Red, Orange, Green, or Black.
--   **Label** --- optional band label.
--   **Search** --- searches either all loaded chromosomes or only the
-    selected chromosomes.
+Unit sequence (repeat sequence to search for, such as `TTAGGG`),
+Max mismatches (maximum number of substitutions allowed for each repeat copy),
+Merge gap (bp) (maximum gap between nearby matches for them to be merged into one repeat array),
+Min copies (minimum number of merged repeat copies required for a band to be retained),
+Also search reverse complement** --- additionally searches for the reverse-complement sequence),
+Color (Red, Orange, Green, or Black),
+Label (optional band label), and Search (searches either all loaded chromosomes or only the selected chromosomes.
 
 Before **Find & Add Band**, whitespace, Enter/newline characters, and
 sequence gap characters (`-`) are automatically removed from the Unit
@@ -437,22 +396,6 @@ The search can be repeated with different repeat units, colors, and
 labels. Bands accumulate on the chromosomes and can be removed from the
 **Repeat bands found so far** table with **Remove Selected Band**.
 
-#### Repeat-band results
-
-The repeat-band table reports:
-
--   **Chromosome**
--   **Label**
--   **Start (bp)**
--   **End (bp)**
--   **Copies**
--   **Total length (bp)**
--   **Color**
-
-**Total length (bp)** is the length of the merged repeat-array region,
-calculated from its end and start coordinates. It therefore describes
-the genomic span of the displayed band, whereas **Copies** reports the
-number of individual repeat-unit matches merged into that band.
 
 #### Selecting chromosomes
 
