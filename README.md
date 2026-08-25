@@ -177,10 +177,6 @@ if the colored chromosome's short arm is shorter than the mean, the colored
 segment is expanded proportionally. If it is longer, the segment is proportionally 
 shrunk. This enables simultaneous karyotyping and banding image preparation.
 
-## Movable and Editable Legend
-
-IdeoKar includes a customizable legend for chromosome ideograms. The legend automatically displays only the colors currently used for chromosome features and can be shown or hidden using the Show Legend controller. Users can drag the legend to reposition it on the image and edit individual legend descriptions. The legend can also be selected and deleted using the Delete key, and restored at any time by enabling Show Legend. The legend is included in exported image and PDF outputs.
-
 
 ## Abbreviations
 
