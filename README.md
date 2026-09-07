@@ -65,6 +65,16 @@ java -jar IdeoKar2.jar
 <p><br></p>
 
 
+<figure>
+    <img src="Karyogram1.png" style="width: 100%;" alt="Figure 3b" />
+  <figcaption aria-hidden="true">
+    Figure 3b.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
+
 ## IdeoKar2 main windows
 
 1. **Core window**: contains the main karyotyping toolbar and a tabbed area with one
@@ -317,6 +327,17 @@ resulting repeat arrays as colored chromosome bands. Feature Tracks display quan
     <img src="Figure 8.jpg" style="width: 100%;" alt="Figure 8" />
   <figcaption aria-hidden="true">
     Figure 8: An example of the circular genomic ideogram for common wheat generated using the Genomic Ideogram plugin of IdeoKar2 showing chromosomal location of the wheat COL genes. Homoeologs are mapped to wheat chromosomes (composed of A, B, and D subgenomes) plus the unassembled (Un) part of the genome. Homoeologs were linked using curved lines (Ribbons). Chromosomes are banded by uploading cytoband svg file which shows banding according to pTa535-1 (red bands) and (GAA)10 (blue bands) FISH patterns. Chromosome number is indicated in the outside layer. Here, Bins per Mb was defined as 0.007 which divided each chromosome to 3 (1D) to 6 (3B) bins with different gene densities.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
+
+
+<figure>
+    <img src="Figure 9.jpg" style="width: 100%;" alt="Figure 9" />
+  <figcaption aria-hidden="true">
+    Figure 9: An example of the circular genomic ideogram for common wheat generated using the Genomic Ideogram plugin of IdeoKar2 showing chromosomal location of the wheat COL genes along with multiple heatmap, gene density, etc. tracks.
   </figcaption>
 </figure>
 
