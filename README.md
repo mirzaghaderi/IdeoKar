@@ -75,6 +75,16 @@ java -jar IdeoKar2.jar
 <p><br></p>
 
 
+<figure>
+    <img src="Example_ideogram-FISH.jpg" style="width: 100%;" alt="Figure 3c" />
+  <figcaption aria-hidden="true">
+    Figure 3c.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
+
 ## IdeoKar2 main windows
 
 1. **Core window**: contains the main karyotyping toolbar and a tabbed area with one
