@@ -8,9 +8,11 @@ for single species, multi-species or allopolyploids.
 
 IdeoKar2 can be run in two ways:
  
-1. Installing on windows using msi installation file (Operating System: Windows only). Download [IdeoKar2_win.msi](https://github.com/mirzaghaderi/IdeoKar/releases/download/V2.0.0/IdeoKar2_win.msi) and extract. Install as a common windows installer then double-click IdeoKar2 icon to launch the app.
+1. Installing on windows using msi installation file (Operating System: Windows only). Download [IdeoKar2_win.msi](https://github.com/mirzaghaderi/IdeoKar/releases) and extract. Install as a common windows installer then double-click IdeoKar2 icon to launch the app.
  
-2. Compiled JAR file which works on Windows, Linux, or macOS provided that Java Runtime Environment (JRE) or Java Development Kit (JDK) is installed. Check Java Installation. Open Command Prompt (CMD) or a terminal and run:
+2. Compiled [JAR file](https://github.com/mirzaghaderi/IdeoKar/releases) which works on Windows, Linux, or macOS provided that Java Runtime Environment (JRE) or Java Development Kit (JDK) is installed. Check Java Installation. Open Command Prompt (CMD) or a terminal and run:
+
+
  
 ```
 java -version
