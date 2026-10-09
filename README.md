@@ -126,10 +126,10 @@ is used for quantitative analysis.
 3. Optional image processing: This includes Crop, Remove background, knife tools described above.
 4. Trace chromosomes: use auto-trace when appropriate or trace manually.
    For manual tracing, left-click to lay down connected segments along the
-   chromosome. At landmark points, either right-click for a context menu or
+   chromosome. At landmark points (such as centromere point or start and end of a chromosomal band), either right-click for a context menu or
    use the following hotkeys:
    - `Ctrl+C` — Centromere.
-   - `Ctrl+R` — Red segment start/end (press once to start and again to close).
+   - `Ctrl+R` — Red band/segment start/end (press once to start and again to close).
    - `Ctrl+O` — Orange segment start/end.
    - `Ctrl+G` — Green segment start/end.
    - `Ctrl+B` — Black segment (heterochromatin) start/end.
@@ -188,12 +188,9 @@ The Excel workbook contains:
 
 ## Chromosome banding
 
-When one colored and one or more uncolored chromosomes with the same 
-chromosome number are traced, the mean chromosome arm sizes are calculated 
-from all traced homologs, while colored segments are mapped onto the mean chromosome 
-rather than using the original traced chromosome's absolute arm length. 
-Segment positions are scaled independently for the short and long arms so that
-if the colored chromosome's short arm is shorter than the mean, the colored 
+A chromosome band is a distinct, reproducible region of a chromosome that appears as a characteristic pattern of alternating light and dark areas after specific staining or molecular labeling techniques (Example: C-banding identifies constitutive heterochromatin, G-banding reveals characteristic chromosome banding patterns, and FISH (fluorescence in situ hybridization) detects specific DNA sequences using fluorescent probes).
+
+When tracing chromosomes in a metaphase chromosome spread image, if multiple chromosomes with the same number are banded, only the banding scale of the first chromosome is used and transferred to the ideogram. Among chromosomes with the same number, if one chromosome is banded during tracing while the remaining homologs are traced without defining bands, the mean chromosome arm lengths are calculated across all traced homologs. The colored segments (bands) from the banded chromosome are then mapped onto the mean chromosome rather than retaining the original chromosome’s absolute arm lengths. Segment positions are scaled independently for the short and long arms so that if the colored chromosome's short arm is shorter than the mean, the colored 
 segment is expanded proportionally. If it is longer, the segment is proportionally 
 shrunk. This enables simultaneous karyotyping and banding image preparation.
 
