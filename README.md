@@ -8,7 +8,7 @@ for single species, multi-species or allopolyploids.
 
 IdeoKar2 can be run in two ways:
  
-1. Installing on windows using msi installation file (Operating System: Windows only). Download IdeoKar2_win.msi and extract. Instal as a common windows installer then double-click IdeoKar2 icon to launch IdeoKar.
+1. Installing on windows using msi installation file (Operating System: Windows only). Download [IdeoKar2_win.msi](https://github.com/mirzaghaderi/IdeoKar/releases/download/V2.0.0/IdeoKar2_win.msi) and extract. Install as a common windows installer then double-click IdeoKar2 icon to launch the app.
  
 2. Compiled JAR file which works on Windows, Linux, or macOS provided that Java Runtime Environment (JRE) or Java Development Kit (JDK) is installed. Check Java Installation. Open Command Prompt (CMD) or a terminal and run:
  
@@ -135,7 +135,7 @@ is used for quantitative analysis.
    - `Ctrl+B` — Black segment (heterochromatin) start/end.
    - `Ctrl+F` — Finish chromosome (opens a naming dialog).
       
-Similarly, `Shift+R`, `Shift+O`, `Shift+G`, `Shift+B` (press once to start and again to close) produces TWO-DOT red, orange, green, and black bands respectively. `1+R`, `1+O`, `1+G`, `1+B`, and `2+R`, `2+O`, `2+G`, `2+B`  produce the left or right dots, respectively. "Left" and "right" are relative to the direction in which the chromosome was traced.
+Similarly, `Shift+R`, `Shift+O`, `Shift+G`, `Shift+B` (press once to start and again to close) produces TWO-DOT red, orange, green, and black bands, respectively. The shortcuts `1+R`, `1+O`, `1+G`, `1+B`, and `2+R`, `2+O`, `2+G`, `2+B`  produce the left or right dots, respectively. "Left" and "right" are relative to the direction in which the chromosome was traced.
 
 5. Inspect and adjust traces: review automatically generated or manually
    traced chromosomes in the Core window. Retrace individual chromosomes if required,
