@@ -136,8 +136,7 @@ is used for quantitative analysis.
    - `Ctrl+F` — Finish chromosome (opens a naming dialog).
    - `Shift+R` — Red two-dot band start/end (press once to start and again to close).
       
-(`Shift+R`, `Shift+O`, `Shift+G`, `Shift+B` produces TWO-DOT red, orange, green, and black bands respectively. `1 + R`, `1 + O`, `1 + G`, and `1 + B`, and 2 + R / O / G / B  produce the left or right dots respectively. "Left" and "right" are relative to the direction in which the
-  chromosome was traced.)
+`Shift+R`, `Shift+O`, `Shift+G`, `Shift+B` (press once to start and again to close) produces TWO-DOT red, orange, green, and black bands respectively. `1 + R`, `1 + O`, `1 + G`, and `1 + B`, and 2 + R / O / G / B  produce the left or right dots respectively. "Left" and "right" are relative to the direction in which the chromosome was traced.
 
 5. Inspect and adjust traces: review automatically generated or manually
    traced chromosomes in the Core window. Retrace individual chromosomes if required,
