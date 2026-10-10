@@ -87,6 +87,17 @@ java -jar IdeoKar2.jar
 <p><br></p>
 
 
+
+<figure>
+    <img src="crossed_centromere.jpg" style="width: 100%;" alt="Figure 3d" />
+  <figcaption aria-hidden="true">
+    Figure 3d.
+  </figcaption>
+</figure>
+
+<p><br></p>
+
+
 ## IdeoKar2 main windows
 
 1. **Core window**: contains the main karyotyping toolbar and a tabbed area with one
