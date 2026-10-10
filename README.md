@@ -276,7 +276,7 @@ Load CSV... (imports chromosome and band measurements from a
 When importing an IdeoKar project, chromosomes without a marked
 centromere are skipped because the plugin needs the centromere to
 determine which arm contains each colored segment.
-Click Generate Ideogram** after entering and checking the data. The
+Click Generate Ideogram after entering and checking the data. The
 plugin converts the measurements into the same chromosome representation
 used by the main IdeoKar application and opens the standard Ideogram
 window. 
